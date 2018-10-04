@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Items {
     public final String id;
 
@@ -5,7 +8,11 @@ public class Items {
         this.id = id;
     }
 
-    public char[] individualItems() {
-        return id.toCharArray();
+    public List<Item> individualItems() {
+        List<Item> items = new ArrayList<>();
+        for(Character sku : id.toCharArray()) {
+           items.add(new Item(sku.toString()));
+        }
+        return items;
     }
 }

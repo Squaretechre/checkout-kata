@@ -18,8 +18,8 @@ public class Checkout {
     }
 
     private int totalCostOf(int total, Catalog catalog) {
-        for(Character c : items.individualItems()) {
-            total += catalog.priceFor(c);
+        for(Item item : items.individualItems()) {
+            total += catalog.priceFor(item);
         }
         return total;
     }

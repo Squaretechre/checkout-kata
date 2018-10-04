@@ -12,7 +12,7 @@ public class Catalog {
         }};
     }
 
-    Integer priceFor(Character c) {
-        return prices.get(c.toString());
+    Integer priceFor(Item item) {
+        return prices.get(item.sku);
     }
 }
