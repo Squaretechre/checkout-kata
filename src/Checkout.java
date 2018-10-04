@@ -2,8 +2,8 @@ public class Checkout {
     private final Catalog catalog;
     private Items items;
 
-    public Checkout() {
-        this.catalog = new Catalog();
+    public Checkout(Catalog catalog) {
+        this.catalog = catalog;
     }
 
     public int total() {

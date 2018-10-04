@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class NoOffersAppliedTests {
     @Test
     public void checkout_total_cost_is_zero_when_no_items_scanned() {
-        Checkout checkout = new Checkout();
+        Checkout checkout = new Checkout(new Catalog());
         assertEquals(0, checkout.total());
     }
 
@@ -21,7 +21,7 @@ public class NoOffersAppliedTests {
             "15, D",
     })
     public void checkout_total_is_equal_to_item_price_when_no_offer_for_that_item(int expectedTotal, String id) {
-        Checkout checkout = new Checkout();
+        Checkout checkout = new Checkout(new Catalog());
         Items items = new Items(id);
         checkout.scan(items);
         assertEquals(expectedTotal, checkout.total());
@@ -34,7 +34,7 @@ public class NoOffersAppliedTests {
             "30, DD",
     })
     public void checkout_total_is_equal_to_a_multiple_of_the_item_price_when_no_offer_for_that_item(int expectedTotal, String id) {
-        Checkout checkout = new Checkout();
+        Checkout checkout = new Checkout(new Catalog());
         Items items = new Items(id);
         checkout.scan(items);
         assertEquals(expectedTotal, checkout.total());
