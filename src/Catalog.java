@@ -12,15 +12,15 @@ public class Catalog {
         }};
     }
 
-    Integer priceFor(Item item) {
-        return prices.get(item.sku);
-    }
-
     int totalCostOf(Items items) {
         int total = 0;
         for(Item item : items.individualItems()) {
             total += priceFor(item);
         }
         return total;
+    }
+
+    private Integer priceFor(Item item) {
+        return prices.get(item.sku);
     }
 }
