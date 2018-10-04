@@ -9,6 +9,7 @@ public class Checkout {
             put("A", 50);
             put("B", 30);
             put("C", 20);
+            put("D", 15);
         }};
     }
 
