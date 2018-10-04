@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba5b72b2-899c-4cc8-bfdd-49b9ea7868c8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/test/AcceptanceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CheckoutKata/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CheckoutKata/Items.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CheckoutKata/ScannedItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CheckoutKata/ScannedItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checkout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ScannedItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScannedItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/OffersAppliedTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/OffersAppliedTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OffersAppliedTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OffersAppliedTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/OffersAppliedTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+            <state relative-caret-position="154">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,26 +44,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Checkout.java">
+      <file leaf-file-name="AcceptanceTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/AcceptanceTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScannedItems.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ScannedItems.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+            <state relative-caret-position="323">
+              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#931#932#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,10 +59,42 @@
       <file leaf-file-name="Items.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="242">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#158#159#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Checkout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <folding>
+                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScannedItems.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ScannedItems.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+              <folding>
+                <element signature="e#174#175#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,19 +124,20 @@
       <list>
         <option value="$PROJECT_DIR$/src/Sku.java" />
         <option value="$PROJECT_DIR$/src/Item.java" />
-        <option value="$PROJECT_DIR$/src/Items.java" />
         <option value="$PROJECT_DIR$/src/Catalog.java" />
         <option value="$PROJECT_DIR$/test/NoOffersAppliedTests.java" />
-        <option value="$PROJECT_DIR$/src/Checkout.java" />
-        <option value="$PROJECT_DIR$/src/ScannedItems.java" />
         <option value="$PROJECT_DIR$/test/OffersAppliedTests.java" />
+        <option value="$PROJECT_DIR$/src/ScannedItems.java" />
+        <option value="$PROJECT_DIR$/test/AcceptanceTests.java" />
+        <option value="$PROJECT_DIR$/src/Checkout.java" />
+        <option value="$PROJECT_DIR$/src/Items.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1280" />
     <option name="y" value="-322" />
-    <option name="width" value="1189" />
+    <option name="width" value="1188" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -182,9 +207,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All tests">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AcceptanceTests.checkout_incremental_scan_acceptance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CheckoutKata" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AcceptanceTests" />
+      <option name="METHOD_NAME" value="checkout_incremental_scan_acceptance" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <dir value="$PROJECT_DIR$/test" />
+      <patterns />
     </configuration>
     <configuration name="All tests" type="JUnit" factoryName="JUnit">
       <module name="CheckoutKata" />
@@ -242,6 +285,15 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.All tests" />
+      <item itemvalue="JUnit.AcceptanceTests.checkout_incremental_scan_acceptance" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AcceptanceTests.checkout_incremental_scan_acceptance" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -257,39 +309,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_tests - 2018.10.04 at 21h 27m 11s.xml">
+    <history-entry file="AcceptanceTests_checkout_incremental_scan_acceptance - 2018.10.04 at 22h 12m 16s.xml">
+      <configuration name="AcceptanceTests.checkout_incremental_scan_acceptance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AcceptanceTests_checkout_incremental_scan_acceptance - 2018.10.04 at 22h 12m 27s.xml">
+      <configuration name="AcceptanceTests.checkout_incremental_scan_acceptance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AcceptanceTests_checkout_incremental_scan_acceptance - 2018.10.04 at 22h 13m 07s.xml">
+      <configuration name="AcceptanceTests.checkout_incremental_scan_acceptance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_tests - 2018.10.04 at 22h 13m 26s.xml">
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_tests - 2018.10.04 at 21h 28m 12s.xml">
+    <history-entry file="All_tests - 2018.10.04 at 22h 13m 44s.xml">
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_tests - 2018.10.04 at 21h 28m 22s.xml">
+    <history-entry file="All_tests - 2018.10.04 at 22h 13m 56s.xml">
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_tests - 2018.10.04 at 21h 30m 24s.xml">
+    <history-entry file="All_tests - 2018.10.04 at 22h 14m 23s.xml">
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_tests - 2018.10.04 at 21h 31m 39s.xml">
+    <history-entry file="All_tests - 2018.10.04 at 22h 14m 58s.xml">
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_tests - 2018.10.04 at 21h 34m 17s.xml">
+    <history-entry file="All_tests - 2018.10.04 at 22h 15m 24s.xml">
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_tests - 2018.10.04 at 21h 36m 02s.xml">
-      <configuration name="All tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_tests - 2018.10.04 at 21h 36m 49s.xml">
-      <configuration name="All tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_tests - 2018.10.04 at 21h 37m 35s.xml">
-      <configuration name="All tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_tests - 2018.10.04 at 21h 38m 17s.xml">
+    <history-entry file="All_tests - 2018.10.04 at 22h 16m 08s.xml">
       <configuration name="All tests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-322" width="1189" height="1057" extended-state="0" />
+    <frame x="1280" y="-322" width="1188" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -301,12 +353,12 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" x="0" y="0" width="247" height="857" id="Documentation" side_tool="true" weight="0.32955536" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39375" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2092415" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20942408" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -346,16 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Catalog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -363,33 +405,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Checkout.java">
+    <entry file="file://$PROJECT_DIR$/test/OffersAppliedTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ScannedItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        <state relative-caret-position="374">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#174#175#0" expanded="true" />
             <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/OffersAppliedTests.java">
+    <entry file="file://$PROJECT_DIR$/test/AcceptanceTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+        <state relative-caret-position="323">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Checkout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
           </folding>
         </state>
       </provider>

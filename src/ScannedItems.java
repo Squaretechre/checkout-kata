@@ -4,7 +4,7 @@ public class ScannedItems {
     private final Items items;
     private HashMap<String, Integer> itemCounts;
 
-    private ScannedItems(Items items) {
+    public ScannedItems(Items items) {
         this.items = items;
         this.itemCounts = new HashMap<>();
     }
@@ -13,7 +13,7 @@ public class ScannedItems {
         return new ScannedItems(new Items(""));
     }
 
-    public int applyDiscount() {
+    public int discount() {
         int totalDiscount = 0;
 
         for(Item item : items.individualItems()) {
@@ -38,9 +38,5 @@ public class ScannedItems {
         }
 
         return totalDiscount;
-    }
-
-    public ScannedItems add(Items items) {
-        return new ScannedItems(items);
     }
 }

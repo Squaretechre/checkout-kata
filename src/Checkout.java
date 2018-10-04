@@ -1,20 +1,20 @@
 public class Checkout {
-    private final Catalog catalog;
     private Items items;
     private ScannedItems scannedItems;
+    private final Catalog catalog;
 
     public Checkout(Catalog catalog) {
         this.catalog = catalog;
+        this.items = Items.None();
         this.scannedItems = ScannedItems.None();
     }
 
     public int total() {
-        int discount = scannedItems.applyDiscount();
-        return catalog.totalCostOf(this.items) - discount;
+        return catalog.totalCostOf(items) - scannedItems.discount();
     }
 
-    public void scan(Items items) {
-        this.items = items;
-        this.scannedItems = scannedItems.add(items);
+    public void scan(Items scannedItems) {
+        items = items.add(scannedItems);
+        this.scannedItems = new ScannedItems(items);
     }
 }
