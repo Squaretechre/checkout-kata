@@ -17,6 +17,9 @@ public class Checkout {
         if(sku == null) {
             return 0;
         }
+        if(sku.id.equals("CC")) {
+            return 40;
+        }
         if(sku.id.equals("AA")) {
             return 100;
         }
