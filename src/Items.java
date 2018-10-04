@@ -4,4 +4,8 @@ public class Items {
     public Items(String id) {
         this.id = id;
     }
+
+    public char[] individualItems() {
+        return id.toCharArray();
+    }
 }

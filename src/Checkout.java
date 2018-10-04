@@ -12,11 +12,16 @@ public class Checkout {
         }
         else {
             int total = 0;
-            for(Character c : items.id.toCharArray()) {
-                total += catalog.priceFor(c);
-            }
+            total = totalCostOf(total, catalog);
             return total;
         }
+    }
+
+    private int totalCostOf(int total, Catalog catalog) {
+        for(Character c : items.individualItems()) {
+            total += catalog.priceFor(c);
+        }
+        return total;
     }
 
     public void scan(Items items) {
