@@ -26,7 +26,7 @@ public class ScannedItems {
         }
 
         int totalDiscount = 0;
-        if (itemCounts.containsKey("A") && itemCounts.get("A") == 3) {
+        if (itemCounts.containsKey("A") && itemCounts.get("A") >= 3) {
             totalDiscount += 20;
         }
         if (itemCounts.containsKey("B") && itemCounts.get("B") == 2) {
