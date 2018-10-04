@@ -7,12 +7,7 @@ public class Checkout {
     }
 
     public int total() {
-        if(items == null) {
-            return 0;
-        }
-        else {
-            return catalog.totalCostOf(items);
-        }
+        return catalog.totalCostOf(items);
     }
 
     public void scan(Items items) {

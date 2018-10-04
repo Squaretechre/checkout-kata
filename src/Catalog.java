@@ -13,6 +13,7 @@ public class Catalog {
     }
 
     int totalCostOf(Items items) {
+        if (items == null) return 0;
         int total = 0;
         for(Item item : items.individualItems()) {
             total += priceFor(item);
