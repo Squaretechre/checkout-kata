@@ -17,15 +17,12 @@ public class Checkout {
         if(sku == null) {
             return 0;
         }
-        else if(sku.id.length() > 1) {
+        else {
             int total = 0;
             for(Character c : sku.id.toCharArray()) {
                 total += prices.get(c.toString());
             }
             return total;
-        }
-        else {
-            return prices.get(sku.id);
         }
     }
 
