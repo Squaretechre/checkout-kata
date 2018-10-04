@@ -17,6 +17,7 @@ public class NoOffersAppliedTests {
     @Parameters({
             "50, A",
             "30, B",
+            "20, C",
     })
     public void checkout_total_is_equal_to_item_price_when_no_offer_for_that_item(int expectedTotal, String id) {
         Checkout checkout = new Checkout();

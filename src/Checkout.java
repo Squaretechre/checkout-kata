@@ -8,6 +8,7 @@ public class Checkout {
         this.prices = new HashMap<String, Integer>() {{
             put("A", 50);
             put("B", 30);
+            put("C", 20);
         }};
     }
 
