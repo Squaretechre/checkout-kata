@@ -17,10 +17,17 @@ public class Checkout {
         if(sku == null) {
             return 0;
         }
-        if(sku.id.equals("CC")) {
+        else if(sku.id.length() > 1) {
+            int total = 0;
+            for(Character c : sku.id.toCharArray()) {
+                total += prices.get(c.toString());
+            }
+            return total;
+        }
+        else if(sku.id.equals("CC")) {
             return 40;
         }
-        if(sku.id.equals("AA")) {
+        else if(sku.id.equals("AA")) {
             return 100;
         }
         else {
