@@ -31,6 +31,7 @@ public class NoOffersAppliedTests {
     @Parameters({
             "100, AA",
             "40, CC",
+            "30, DD",
     })
     public void checkout_total_is_equal_to_a_multiple_of_the_item_price_when_no_offer_for_that_item(int expectedTotal, String id) {
         Checkout checkout = new Checkout();
