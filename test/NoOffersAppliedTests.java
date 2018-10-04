@@ -33,9 +33,9 @@ public class NoOffersAppliedTests {
             "40, CC",
             "30, DD",
     })
-    public void checkout_total_is_equal_to_a_multiple_of_the_item_price_when_no_offer_for_that_item(int expectedTotal, String id) {
+    public void checkout_total_is_equal_to_a_multiple_of_the_item_price_when_no_offer_for_that_item(int expectedTotal, String itemIds) {
         Checkout checkout = new Checkout(new Catalog());
-        Items items = new Items(id);
+        Items items = new Items(itemIds);
         checkout.scan(items);
         assertEquals(expectedTotal, checkout.total());
     }
