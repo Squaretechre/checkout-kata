@@ -23,6 +23,7 @@ public class OffersAppliedTests {
     @Test
     @Parameters({
             "180, AAAA",
+            "75, BBB",
     })
     public void checkout_total_is_item_total_minus_offer_discount_when_offer_items_and_non_offer_items_are_scanned(int expectedTotal, String itemIds) {
         Checkout checkout = new Checkout(new Catalog());

@@ -29,7 +29,7 @@ public class ScannedItems {
         if (itemCounts.containsKey("A") && itemCounts.get("A") >= 3) {
             totalDiscount += 20;
         }
-        if (itemCounts.containsKey("B") && itemCounts.get("B") == 2) {
+        if (itemCounts.containsKey("B") && itemCounts.get("B") >= 2) {
             totalDiscount += 15;
         }
         return totalDiscount;
