@@ -24,12 +24,6 @@ public class Checkout {
             }
             return total;
         }
-        else if(sku.id.equals("CC")) {
-            return 40;
-        }
-        else if(sku.id.equals("AA")) {
-            return 100;
-        }
         else {
             return prices.get(sku.id);
         }
