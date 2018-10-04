@@ -1,7 +1,11 @@
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.assertEquals;
 
+@RunWith(JUnitParamsRunner.class)
 public class NoOffersAppliedTests {
     @Test
     public void checkout_total_cost_is_zero_when_no_items_scanned() {
@@ -10,10 +14,14 @@ public class NoOffersAppliedTests {
     }
 
     @Test
-    public void checkout_total_is_equal_to_item_price_when_no_offer_for_that_item() {
+    @Parameters({
+            "50, A",
+            "30, B",
+    })
+    public void checkout_total_is_equal_to_item_price_when_no_offer_for_that_item(int expectedTotal, String id) {
         Checkout checkout = new Checkout();
-        Sku sku = new Sku("A");
+        Sku sku = new Sku(id);
         checkout.scan(sku);
-        assertEquals(50, checkout.total());
+        assertEquals(expectedTotal, checkout.total());
     }
 }
