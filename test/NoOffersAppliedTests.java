@@ -22,8 +22,8 @@ public class NoOffersAppliedTests {
     })
     public void checkout_total_is_equal_to_item_price_when_no_offer_for_that_item(int expectedTotal, String id) {
         Checkout checkout = new Checkout();
-        Sku sku = new Sku(id);
-        checkout.scan(sku);
+        Items items = new Items(id);
+        checkout.scan(items);
         assertEquals(expectedTotal, checkout.total());
     }
 
@@ -35,8 +35,8 @@ public class NoOffersAppliedTests {
     })
     public void checkout_total_is_equal_to_a_multiple_of_the_item_price_when_no_offer_for_that_item(int expectedTotal, String id) {
         Checkout checkout = new Checkout();
-        Sku sku = new Sku(id);
-        checkout.scan(sku);
+        Items items = new Items(id);
+        checkout.scan(items);
         assertEquals(expectedTotal, checkout.total());
     }
 }
