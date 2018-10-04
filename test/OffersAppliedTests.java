@@ -31,4 +31,16 @@ public class OffersAppliedTests {
         checkout.scan(items);
         assertEquals(expectedTotal, checkout.total());
     }
+
+    @Test
+    @Parameters({
+            "260, AAAAAA",
+            "135, BBBBBB",
+    })
+    public void checkout_total_is_item_total_minus_offer_discount_when_an_offer_can_be_applied_more_than_once_the_items(int expectedTotal, String itemIds) {
+        Checkout checkout = new Checkout(new Catalog());
+        Items items = new Items(itemIds);
+        checkout.scan(items);
+        assertEquals(expectedTotal, checkout.total());
+    }
 }

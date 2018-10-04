@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.Map;
 
 public class ScannedItems {
     private final Items items;
@@ -7,7 +6,7 @@ public class ScannedItems {
 
     private ScannedItems(Items items) {
         this.items = items;
-        this.itemCounts = new HashMap<String, Integer>();
+        this.itemCounts = new HashMap<>();
     }
 
     public static ScannedItems None() {
@@ -15,6 +14,8 @@ public class ScannedItems {
     }
 
     public int applyDiscount() {
+        int totalDiscount = 0;
+
         for(Item item : items.individualItems()) {
             if(itemCounts.containsKey(item.sku)) {
                 Integer incrementedCount = itemCounts.get(item.sku) + 1;
@@ -23,15 +24,19 @@ public class ScannedItems {
             else {
                 itemCounts.put(item.sku, 1);
             }
+
+            if (itemCounts.containsKey("A") && itemCounts.get("A") >= 3) {
+                totalDiscount += 20;
+                Integer decrementedCount = itemCounts.get("A") - 3;
+                itemCounts.put("A", decrementedCount);
+            }
+            if (itemCounts.containsKey("B") && itemCounts.get("B") >= 2) {
+                totalDiscount += 15;
+                Integer decrementedCount = itemCounts.get("B") - 2;
+                itemCounts.put("B", decrementedCount);
+            }
         }
 
-        int totalDiscount = 0;
-        if (itemCounts.containsKey("A") && itemCounts.get("A") >= 3) {
-            totalDiscount += 20;
-        }
-        if (itemCounts.containsKey("B") && itemCounts.get("B") >= 2) {
-            totalDiscount += 15;
-        }
         return totalDiscount;
     }
 
