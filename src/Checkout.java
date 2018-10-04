@@ -11,17 +11,8 @@ public class Checkout {
             return 0;
         }
         else {
-            int total = 0;
-            total = totalCostOf(total, catalog);
-            return total;
+            return catalog.totalCostOf(items);
         }
-    }
-
-    private int totalCostOf(int total, Catalog catalog) {
-        for(Item item : items.individualItems()) {
-            total += catalog.priceFor(item);
-        }
-        return total;
     }
 
     public void scan(Items items) {
