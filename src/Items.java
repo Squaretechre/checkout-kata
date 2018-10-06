@@ -11,10 +11,6 @@ public class Items implements Iterable<Item> {
         this.itemList = individualItems();
     }
 
-    public static Items None() {
-        return new Items("");
-    }
-
     private List<Item> individualItems() {
         List<Item> items = new ArrayList<>();
         for(Character sku : this.items.toCharArray()) {
@@ -30,5 +26,9 @@ public class Items implements Iterable<Item> {
     @Override
     public Iterator<Item> iterator() {
         return itemList.iterator();
+    }
+
+    public ItemTotals totals() {
+        return new ItemTotals(this);
     }
 }

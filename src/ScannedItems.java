@@ -1,13 +1,10 @@
-import java.util.HashMap;
 import java.util.Iterator;
 
 public class ScannedItems implements Iterable<Item> {
     private final Items items;
-    private HashMap<String, Integer> itemCounts;
 
     private ScannedItems(Items items) {
         this.items = items;
-        this.itemCounts = new HashMap<>();
     }
 
     public static ScannedItems None() {
@@ -15,21 +12,8 @@ public class ScannedItems implements Iterable<Item> {
     }
 
     public int discount() {
-        int totalDiscount = 0;
-
-        for(Item item : items) {
-            if(itemCounts.containsKey(item.sku)) {
-                Integer incrementedCount = itemCounts.get(item.sku) + 1;
-                itemCounts.put(item.sku, incrementedCount);
-            }
-            else {
-                itemCounts.put(item.sku, 1);
-            }
-
-            totalDiscount = Offers.offers(itemCounts, totalDiscount);
-        }
-
-        return totalDiscount;
+        ItemTotals totals = items.totals();
+        return totals.calculateDiscount();
     }
 
     @Override
