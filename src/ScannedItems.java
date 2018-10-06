@@ -11,9 +11,9 @@ public class ScannedItems implements Iterable<Item> {
         return new ScannedItems(new Items(""));
     }
 
-    public int discount() {
+    public int totalDiscountFor(Offers offers) {
         ItemTotals totals = items.totals();
-        return totals.calculateDiscount();
+        return totals.calculateDiscountFor(offers);
     }
 
     @Override
