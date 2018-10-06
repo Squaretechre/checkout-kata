@@ -1,18 +1,21 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class Items {
+public class Items implements Iterable<Item> {
     private final String items;
+    private List<Item> itemList;
 
     public Items(String items) {
         this.items = items;
+        this.itemList = individualItems();
     }
 
     public static Items None() {
         return new Items("");
     }
 
-    public List<Item> individualItems() {
+    private List<Item> individualItems() {
         List<Item> items = new ArrayList<>();
         for(Character sku : this.items.toCharArray()) {
            items.add(new Item(sku.toString()));
@@ -22,5 +25,10 @@ public class Items {
 
     public Items add(Items items) {
        return new Items(this.items + items.items);
+    }
+
+    @Override
+    public Iterator<Item> iterator() {
+        return itemList.iterator();
     }
 }

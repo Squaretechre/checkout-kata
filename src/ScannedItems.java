@@ -16,7 +16,7 @@ public class ScannedItems {
     public int discount() {
         int totalDiscount = 0;
 
-        for(Item item : items.individualItems()) {
+        for(Item item : items) {
             if(itemCounts.containsKey(item.sku)) {
                 Integer incrementedCount = itemCounts.get(item.sku) + 1;
                 itemCounts.put(item.sku, incrementedCount);
