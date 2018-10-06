@@ -5,7 +5,7 @@ public class ScannedItems implements Iterable<Item> {
     private final Items items;
     private HashMap<String, Integer> itemCounts;
 
-    public ScannedItems(Items items) {
+    private ScannedItems(Items items) {
         this.items = items;
         this.itemCounts = new HashMap<>();
     }
@@ -26,16 +26,7 @@ public class ScannedItems implements Iterable<Item> {
                 itemCounts.put(item.sku, 1);
             }
 
-            if (itemCounts.containsKey("A") && itemCounts.get("A") >= 3) {
-                totalDiscount += 20;
-                Integer decrementedCount = itemCounts.get("A") - 3;
-                itemCounts.put("A", decrementedCount);
-            }
-            if (itemCounts.containsKey("B") && itemCounts.get("B") >= 2) {
-                totalDiscount += 15;
-                Integer decrementedCount = itemCounts.get("B") - 2;
-                itemCounts.put("B", decrementedCount);
-            }
+            totalDiscount = Offers.offers(itemCounts, totalDiscount);
         }
 
         return totalDiscount;
