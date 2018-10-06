@@ -11,7 +11,7 @@ public class Checkout {
         return catalog.totalCostOf(scannedItems) - scannedItems.discount();
     }
 
-    public void scan(Items scannedItems) {
-        this.scannedItems = this.scannedItems.add(scannedItems);
+    public void scan(Items items) {
+        this.scannedItems = this.scannedItems.add(items);
     }
 }
