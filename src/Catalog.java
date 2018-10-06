@@ -12,7 +12,7 @@ public class Catalog {
         }};
     }
 
-    int totalCostOf(Items items) {
+    int totalCostOf(ScannedItems items) {
         if (items == null) return 0;
         int total = 0;
         for(Item item : items) {

@@ -1,6 +1,7 @@
 import java.util.HashMap;
+import java.util.Iterator;
 
-public class ScannedItems {
+public class ScannedItems implements Iterable<Item> {
     private final Items items;
     private HashMap<String, Integer> itemCounts;
 
@@ -38,5 +39,14 @@ public class ScannedItems {
         }
 
         return totalDiscount;
+    }
+
+    @Override
+    public Iterator<Item> iterator() {
+        return items.iterator();
+    }
+
+    public ScannedItems add(Items scannedItems) {
+        return new ScannedItems(this.items.add(scannedItems));
     }
 }
