@@ -3,9 +3,9 @@ public class Checkout {
     private final Catalog catalog;
     private final Offers offers;
 
-    public Checkout(Catalog catalog) {
+    public Checkout(Catalog catalog, Offers offers) {
         this.catalog = catalog;
-        this.offers = new Offers();
+        this.offers = offers;
         this.scannedItems = ScannedItems.None();
     }
 

@@ -1,15 +1,11 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class Offers {
     private final List<Offer> offers;
 
-    public Offers() {
-        this.offers = new ArrayList<Offer>() {{
-            add(new Offer(new Item("A"), 3, 20));
-            add(new Offer(new Item("B"), 2, 15));
-        }};
+    public Offers(List<Offer> offers) {
+        this.offers = offers;
     }
 
     public int calculateDiscountFor(HashMap<Item, Integer> counts) {

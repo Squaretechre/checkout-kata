@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class Catalog {
-    final HashMap<String, Integer> prices;
+    private final HashMap<String, Integer> prices;
 
     public Catalog() {
         this.prices = new HashMap<String, Integer>() {{
@@ -13,8 +13,8 @@ public class Catalog {
     }
 
     int totalCostOf(ScannedItems items) {
-        if (items == null) return 0;
         int total = 0;
+        if (items == null) return total;
         for(Item item : items) {
             total += priceFor(item);
         }
