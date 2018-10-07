@@ -7,11 +7,11 @@ public class ScannedItems implements Iterable<Item> {
         this.items = items;
     }
 
-    public static ScannedItems None() {
+    static ScannedItems None() {
         return new ScannedItems(new Items(""));
     }
 
-    public int totalDiscountFor(Offers offers) {
+    int totalDiscountFor(Offers offers) {
         ItemTotals totals = items.totals();
         return totals.calculateDiscountFor(offers);
     }
@@ -21,7 +21,7 @@ public class ScannedItems implements Iterable<Item> {
         return items.iterator();
     }
 
-    public ScannedItems add(Items scannedItems) {
+    ScannedItems add(Items scannedItems) {
         return new ScannedItems(this.items.add(scannedItems));
     }
 }

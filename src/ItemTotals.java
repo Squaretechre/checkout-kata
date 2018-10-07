@@ -1,9 +1,9 @@
 import java.util.HashMap;
 
-public class ItemTotals {
+class ItemTotals {
     private final Items items;
 
-    public ItemTotals(Items items) {
+    ItemTotals(Items items) {
         this.items = items;
     }
 
@@ -20,7 +20,7 @@ public class ItemTotals {
         return counts;
     }
 
-    public int calculateDiscountFor(Offers offers) {
+    int calculateDiscountFor(Offers offers) {
         return offers.calculateDiscountFor(itemTotals());
     }
 }

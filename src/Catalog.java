@@ -1,7 +1,6 @@
 import java.util.HashMap;
 
-public class Catalog {
-
+class Catalog {
     int totalCostOf(ScannedItems items) {
         int total = 0;
         if (items == null) return total;

@@ -1,14 +1,14 @@
 import java.util.HashMap;
 import java.util.List;
 
-public class Offers {
+class Offers {
     private final List<Offer> offers;
 
-    public Offers(List<Offer> offers) {
+    Offers(List<Offer> offers) {
         this.offers = offers;
     }
 
-    public int calculateDiscountFor(HashMap<Item, Integer> counts) {
+    int calculateDiscountFor(HashMap<Item, Integer> counts) {
         int totalDiscount = 0;
         HashMap<Item, Integer> itemTotals = counts;
 

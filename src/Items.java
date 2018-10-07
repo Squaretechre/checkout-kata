@@ -6,7 +6,7 @@ public class Items implements Iterable<Item> {
     private final String items;
     private List<Item> itemList;
 
-    public Items(String items) {
+    Items(String items) {
         this.items = items;
         this.itemList = individualItems();
     }
@@ -19,7 +19,7 @@ public class Items implements Iterable<Item> {
         return items;
     }
 
-    public Items add(Items items) {
+    Items add(Items items) {
        return new Items(this.items + items.items);
     }
 
@@ -28,7 +28,7 @@ public class Items implements Iterable<Item> {
         return itemList.iterator();
     }
 
-    public ItemTotals totals() {
+    ItemTotals totals() {
         return new ItemTotals(this);
     }
 }
