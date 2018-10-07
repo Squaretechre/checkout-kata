@@ -16,9 +16,8 @@ class Offer {
     }
 
     HashMap<Item,Integer> deductFrom(HashMap<Item, Integer> itemTotals) {
-        HashMap<Item,Integer> newTotals = itemTotals;
-        Integer decrementedCount = newTotals.get(item) - amountRequiredForReward;
-        newTotals.put(item, decrementedCount);
-        return newTotals;
+        Integer decrementedCount = itemTotals.get(item) - amountRequiredForReward;
+        itemTotals.put(item, decrementedCount);
+        return itemTotals;
     }
 }
