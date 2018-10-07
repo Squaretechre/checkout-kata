@@ -1,16 +1,6 @@
 import java.util.HashMap;
 
 public class Catalog {
-    private final HashMap<String, Integer> prices;
-
-    public Catalog() {
-        this.prices = new HashMap<String, Integer>() {{
-            put("A", 50);
-            put("B", 30);
-            put("C", 20);
-            put("D", 15);
-        }};
-    }
 
     int totalCostOf(ScannedItems items) {
         int total = 0;
@@ -22,6 +12,12 @@ public class Catalog {
     }
 
     private Integer priceFor(Item item) {
+        HashMap<String, Integer> prices = new HashMap<String, Integer>() {{
+            put("A", 50);
+            put("B", 30);
+            put("C", 20);
+            put("D", 15);
+        }};
         return prices.get(item.sku);
     }
 }
