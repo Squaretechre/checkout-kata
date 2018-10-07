@@ -11,12 +11,12 @@ class Catalog {
     }
 
     private Integer priceFor(Item item) {
-        HashMap<String, Integer> prices = new HashMap<String, Integer>() {{
-            put("A", 50);
-            put("B", 30);
-            put("C", 20);
-            put("D", 15);
+        HashMap<Item, Integer> prices = new HashMap<Item, Integer>() {{
+            put(new Item("A"), 50);
+            put(new Item("B"), 30);
+            put(new Item("C"), 20);
+            put(new Item("D"), 15);
         }};
-        return prices.get(item.sku);
+        return prices.get(item);
     }
 }
